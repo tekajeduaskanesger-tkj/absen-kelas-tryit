@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendataan Siswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page1" class="page active">
+        <div class="container">
+            <h1>📋 Form Pendataan Siswa</h1>
+            <p class="subtitle">Silakan isi data diri Anda dengan lengkap</p>
+            
+            <form id="studentForm">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="nim">Tempat Tanggal Lahir</label>
+                    <input type="text" id="nim" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="class">Kelas</label>
+                    <input type="text" id="class" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">NO Absen</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <button type="submit" class="btn">Submit Data</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="page2" class="page">
+        <div class="container surprise-container">
+            <h1 class="surprise-text">Weladala Ternyata Si Cantikk...💕</h1>
+            <div class="hearts-container">
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+            </div>
+            
+            <div class="valentine-message">
+                <h2>🌹 Happy Valentine's Day! 🌹</h2>
+                <p>Ini bukan form pendataan siswa...</p>
+                <p>Tapi surprise spesial untuk kamu! ❤️</p>
+                <p class="love-quote">
+                    "Kelihatan sepele tapi ini khusus buat kamu yang,<br>
+                    aku merasa bersyukur jadi sma awk mu, yoo meski aku ne aga sensi<br>
+                    tapi makasih udah mau bertahan sama aku, nanti cokelat nya nyusul mwhehehehe...."
+                </p>
+                <p class="signature">- Om2 dolopo💖</p>
+                <button class="btn btn-next" onclick="goToPage3()">~ Ga Usah penasaran, udah habis ~</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="page3" class="page">
+        <div class="container puzzle-container">
+            <h1>🎯 Teka-Teki Cinta</h1>
+            <p class="puzzle-subtitle">Jawab pertanyaan ini untuk membuka sesuatu untuk mu</p>
+            
+            <div class="puzzle-box">
+                <p class="question">💭 Tanggal Jadian?? (nek msih inget seeee) wleee</p>
+                <p class="hint">(Format: DD/MM/YYYY)</p>
+                <input type="text" id="answer" placeholder="Contoh: 14/02/2024">
+                <button class="btn" onclick="checkAnswer()">IKI DI PENCET</button>
+                <p id="wrongAnswer" class="wrong-answer">Coba lagi sayang... 💕</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="page4" class="page">
+        <div class="container gallery-container">
+            <h1>💖 Our Memories Together 💖</h1>
+            
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <div class="photo-placeholder">
+                        <div class="photo-item">
+                            <img src="foto/pics1.jpg" alt="Foto 1" style="width: 100%; height: 300px; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <div class="photo-placeholder">
+                         <div class="photo-item">
+                            <img src="foto/pics7.jpg" alt="Foto 1" style="width: 100%; height: 300px; object-fit: cover;"> 
+                         </div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <div class="photo-placeholder">
+                         <div class="photo-item">
+                            <img src="foto/pics3.jpg" alt="Foto 1" style="width: 100%; height: 300px; object-fit: cover;"> 
+                         </div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <div class="photo-placeholder">
+                         <div class="photo-item">
+                            <img src="foto/pics6.jpg" alt="Foto 1" style="width: 100%; height: 300px; object-fit: cover;"> 
+                         </div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <div class="photo-placeholder">
+                         <div class="photo-item">
+                            <img src="foto/pics8.jpg" alt="Foto 1" style="width: 100%; height: 300px; object-fit: cover;"> 
+                         </div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <div class="photo-placeholder">
+                         <div class="photo-item">
+                            <img src="foto/pics4.jpg" alt="Foto 1" style="width: 100%; height: 300px; object-fit: cover;"> 
+                         </div>ll>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music-player">
+                <h3>🎵 Our Special Song</h3>
+                <audio id="bgMusic" controls>
+                    <source src="foto/music].mp3" type="audio/mpeg">
+                    Browser Anda tidak mendukung audio player.
+                </audio>
+                <p class="music-note">❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</p>
+            </div>
+
+            <div class="final-message">
+                <p>Happy Valentine's Day, Sayang! 💕</p>
+                <p>I Love You Always & Forever ❤️</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
